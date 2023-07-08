@@ -6,7 +6,7 @@
 /*   By: edi-iori <edi-iori@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/08 22:19:24 by edi-iori          #+#    #+#             */
-/*   Updated: 2023/07/08 23:04:15 by edi-iori         ###   ########lyon.fr   */
+/*   Updated: 2023/07/08 23:08:10 by edi-iori         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ int	ft_iterative_factorial(int nb)
 	{
 		return (0);
 	}
-
 	total = 1;
 	i = 0;
 	while (i++ < nb)

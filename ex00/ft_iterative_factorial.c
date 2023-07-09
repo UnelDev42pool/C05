@@ -6,10 +6,19 @@
 /*   By: edi-iori <edi-iori@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/08 22:19:24 by edi-iori          #+#    #+#             */
-/*   Updated: 2023/07/08 23:08:10 by edi-iori         ###   ########lyon.fr   */
+/*   Updated: 2023/07/09 09:50:46 by edi-iori         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * The function calculates the factorial of a given number using an iterative
+ * approach.
+ * 
+ * @param nb The parameter "nb" represents the number for which we want to
+ * calculate the factorial.
+ * 
+ * @return the factorial of the input number.
+ */
 int	ft_iterative_factorial(int nb)
 {
 	int	i;

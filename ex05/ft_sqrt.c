@@ -6,27 +6,9 @@
 /*   By: edi-iori <edi-iori@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/09 10:35:35 by edi-iori          #+#    #+#             */
-/*   Updated: 2023/07/09 10:57:25 by edi-iori         ###   ########lyon.fr   */
+/*   Updated: 2023/07/09 11:36:03 by edi-iori         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
-
-/**
- * The function calculates the power of a number recursively.
- * 
- * @param nb The base number that will be raised to the power.
- * @param power The power parameter represents the exponent to which the base
- * number (nb) is raised.
- * 
- * @return the result of raising the number `nb` to the power `power`.
- */
-int	ft_recursive_power(int nb, int power)
-{
-	if (nb == 0 && power == 0)
-		return (1);
-	if (power == 1)
-		return (nb);
-	return (nb * ft_recursive_power(nb, power - 1));
-}
 
 /**
  * The function `ft_sqrt` calculates the square root of a given number.
@@ -39,10 +21,16 @@ int	ft_recursive_power(int nb, int power)
 int	ft_sqrt(int nb)
 {
 	int	i;
+	int	result;
+	int	remove;
 
-	i = 1;
-	while (nb > ft_recursive_power(i, 2))
+	i = 0;
+	result = nb;
+	remove = 1;
+	while (result > 0)
 	{
+		result -=remove;
+		remove +=2;
 		i++;
 	}
 	return (i);

@@ -6,7 +6,7 @@
 /*   By: edi-iori <edi-iori@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/09 09:47:18 by edi-iori          #+#    #+#             */
-/*   Updated: 2023/07/09 10:32:32 by edi-iori         ###   ########lyon.fr   */
+/*   Updated: 2023/07/09 10:33:47 by edi-iori         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@
  */
 int	ft_fibonacci(int index)
 {
+	if (index < 0)
+		return (-1);
 	if (index == 0)
 		return (0);
 	else if (index == 1)

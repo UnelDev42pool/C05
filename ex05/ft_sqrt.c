@@ -6,7 +6,7 @@
 /*   By: edi-iori <edi-iori@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/09 10:35:35 by edi-iori          #+#    #+#             */
-/*   Updated: 2023/07/09 11:36:03 by edi-iori         ###   ########lyon.fr   */
+/*   Updated: 2023/07/13 11:35:21 by edi-iori         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,18 @@ int	ft_sqrt(int nb)
 	remove = 1;
 	while (result > 0)
 	{
-		result -=remove;
-		remove +=2;
+		result -= remove;
+		remove += 2;
 		i++;
+	}
+	if (result != 0)
+	{
+		return (0);
 	}
 	return (i);
 }
 // #include <stdio.h>
 // int main()
 // {
-// 	printf("%d", ft_sqrt(64));
+// 	printf("%d", ft_sqrt(8));
 // }

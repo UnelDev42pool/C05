@@ -6,7 +6,7 @@
 /*   By: edi-iori <edi-iori@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/09 09:30:43 by edi-iori          #+#    #+#             */
-/*   Updated: 2023/07/09 09:50:46 by edi-iori         ###   ########lyon.fr   */
+/*   Updated: 2023/07/10 13:44:16 by edi-iori         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,9 @@
  */
 int	ft_recursive_power(int nb, int power)
 {
-	if (nb == 0 && power == 0)
+	if (power < 0)
+		return (0);
+	if (nb == 0 || power == 0)
 		return (1);
 	if (power == 1)
 		return (nb);
@@ -30,5 +32,5 @@ int	ft_recursive_power(int nb, int power)
 // #include <stdio.h>
 // int main()
 // {
-	// printf("%d", ft_recursive_power(2, 10));
+// 	printf("%d", ft_recursive_power(5, 3));
 // }

@@ -6,7 +6,7 @@
 /*   By: edi-iori <edi-iori@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/08 22:49:09 by edi-iori          #+#    #+#             */
-/*   Updated: 2023/07/09 09:50:46 by edi-iori         ###   ########lyon.fr   */
+/*   Updated: 2023/07/09 16:31:50 by edi-iori         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,6 @@
  */
 int	ft_recursive_factorial(int nb)
 {
-	int	i;
-
 	if (nb < 0)
 	{
 		return (0);
